@@ -1,44 +1,106 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    background-image: url('images/image2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
 header {
-    background-color: #333;
-    color: white;
     text-align: center;
+    background-color: #333;
+    color: #fff;
     padding: 20px;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
 }
 
-button {
-    background-color: #eb8212;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
     font-size: 16px;
-    display: block; 
-    margin: 0 auto; 
+    transition: color 0.2s;
 }
 
-button:hover {
-    background-color: #eb8212;
+nav a:hover {
+    color: #ff9900;
 }
 
+section {
+    padding: 40px;
+    text-align: center;
+    color: #f5f5f5;
+}
 
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding-top: 15px;
+}
 
+.portfolio-item {
+    border-radius: 20px;
+    padding: 50px 150px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: (255, 255, 255, 0.1);
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.portfolio-item img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
 
+.portfolio-item p{
+    text-align: left;
+    line-height: 1.5;
+}
 
+.portfolio-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    margin-top: 60px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+}
+
+.portfolio-item a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline;
+}
+
+.portfolio-item ul li {
+    list-style: none;
+    line-height: 1.5;
+}
